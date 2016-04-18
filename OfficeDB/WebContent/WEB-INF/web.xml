@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>Integration CRUD JSP Project</display-name>
+    <servlet>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>lang</param-value>
+    </context-param>
+    <servlet>
+        <description/>
+        <display-name>EmployeeController</display-name>
+        <servlet-name>EmployeeController</servlet-name>
+        <servlet-class>com.tutorial.crudwithjsp.controller.EmployeeController</servlet-class>
+    </servlet>
+    <servlet>
+        <description/>
+        <display-name>DepartmentController</display-name>
+        <servlet-name>DepartmentController</servlet-name>
+        <servlet-class>com.tutorial.crudwithjsp.controller.DepartmentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeController</servlet-name>
+        <url-pattern>/EmployeeController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DepartmentController</servlet-name>
+        <url-pattern>/DepartmentController</url-pattern>
+    </servlet-mapping>
+</web-app>
