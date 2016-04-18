@@ -23,13 +23,13 @@
         <description/>
         <display-name>EmployeeController</display-name>
         <servlet-name>EmployeeController</servlet-name>
-        <servlet-class>com.tutorial.crudwithjsp.controller.EmployeeController</servlet-class>
+        <servlet-class>controller.EmployeeController</servlet-class>
     </servlet>
     <servlet>
         <description/>
         <display-name>DepartmentController</display-name>
         <servlet-name>DepartmentController</servlet-name>
-        <servlet-class>com.tutorial.crudwithjsp.controller.DepartmentController</servlet-class>
+        <servlet-class>controller.DepartmentController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EmployeeController</servlet-name>
